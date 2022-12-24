@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NetBanking">
+	<listeners>
+		<listener class-name = "com.netbanking.utilities.Reporting"/>
+	</listeners>
+  <test thread-count="5" name="NetBankingTestCases">
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <!--<class name="com.netbanking.testCases.TC_LoginTest_001"/>-->
+      <class name="com.netbanking.testCases.TC_LoginDDT_002"/>
+    </classes>
+  </test> <!-- NetBankingTestCases -->
+</suite> <!-- NetBanking -->
